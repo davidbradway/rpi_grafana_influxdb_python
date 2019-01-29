@@ -17,6 +17,7 @@ To install docker on the Raspberry Pi, run the following command at the prompt
 ```bash
 curl -sSL https://get.docker.com |sh
 sudo apt-get update && sudo apt-get install docker-compose virtualenv
+sudo reboot
 ```
 
 I am assuming that python comes preinstalled.
@@ -36,6 +37,7 @@ Clone the repository by running
 
 ```bash
 git clone https://github.com/inderpreet/rpi_grafana_influxdb_python
+cd rpi_grafana_influxdb_python/
 ```
 
 ### Begin the Docker container
