@@ -3,6 +3,7 @@ version: '2'
 services:
     influxdb:
         build: influxdb
+        restart: always
         container_name: influxdb
         image: influxdb-hackaday
         env_file: config.env
@@ -14,6 +15,7 @@ services:
             
     grafana:
         image: fg2it/grafana-armhf:v4.1.2
+        restart: always
         container_name: grafana
         env_file: config.env
         links:
